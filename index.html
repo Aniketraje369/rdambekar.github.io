@@ -11,7 +11,12 @@
  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <meta name="description" content="Rahul Ambekar's website">
+    <meta name="keywords" content="Rahul Ambekar, Rahul, Ambekar, rahul.ml, aniket raje, Taloja, Taloja phase1, panvel">
+    <meta name="author" content="Rahul Ambekar">
+
+
+    <title>Rahul Ambekar</title>
     <!-- link to css  -->
     <link rel="stylesheet" href="style.css">
 
@@ -61,27 +66,30 @@
 
         <!-- home  -->
 
-        <section class="home bd-grid" id="home">
+        <section class="home home-grid" id="home"> <!-- bd-grid has remove home grid is addede to satisfy the requirement -->
 
             <div class="home_data">
 
-                <h1 class="home_title">Hi, <br>I'am <span class="home_title-color">Rahul</span><br>Influencer</h1>
+                <h1 class="home_title">Hi,<br>I'am <span class="home_title-color">Rahul Ambekar</span><br></h1>
 
                 <a href="#contact" class="button">Contact</a>
             </div>
-
+            
+            
+            <div class="follow_conatiner">
+                <p class="follow">Follow Me</p>
             <div class="home_social">
+                
+                <a href="#" class="home_social-icon"><i class='bx bxl-facebook-square bx-flashing' ></i></a>
+                <a href="#" class="home_social-icon"><i class='bx bxl-twitter bx-tada' ></i></a>
+                <a href="#" class="home_social-icon"><i class='bx bxl-instagram-alt bx-burst' ></i></a>
 
-                <a href="#" class="home_social-icon"><i class='bx bxl-github'></i></a>
-                <a href="#" class="home_social-icon"><i class='bx bxl-twitter'></i></a>
-                <a href="#" class="home_social-icon"><i class='bx bxl-instagram'></i></a>
+            </div></div>
 
-            </div>
-
-
+<!-- 
             <div class="home_img">
                 <img src="imageonline-co-transparentimage.png" alt="image">
-            </div>
+            </div> -->
 
         </section>
 
@@ -133,14 +141,13 @@
 
                     <!-- paragraph -->
 
-                    <p class="skills_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloribus
-                        dolorum voluptatibus voluptas. Tempore quae blanditiis ut saepe alias!</p>
+                    <p class="skills_text">I love to connect and meet with new people on social Media. I spend my most of the time with following:</p>
 
-                        <!-- html  -->
+                        <!-- inst  -->
                     <div class="skills_data">
                         <div class="skills_names">
-                            <i class='bx bxl-html5 skills_icon'></i>
-                            <span class="skills_name">HTML5</span>
+                            <i class='bx bxl-instagram-alt' style='color:#3043f7'  ></i>
+                            <span class="skills_name">Instagram</span>
 
                         </div>
                         <div>
@@ -149,11 +156,11 @@
                         <div class="skills_bar skills_html"></div>
                     </div>
 
-                    <!-- css  -->
+                    <!-- twitter  -->
                     <div class="skills_data">
                         <div class="skills_names">
-                            <i class='bx bxl-css3 skills_icon' ></i>
-                            <span class="skills_name">CSS3</span>
+                            <i class='bx bxl-twitter' style='color:#3f63ec'  ></i>
+                            <span class="skills_name">Twitter</span>
 
                         </div>
                         <div>
@@ -162,11 +169,11 @@
                         <div class="skills_bar skills_css"></div>
                     </div>
 
-                    <!-- javascript -->
+                    <!-- facebook -->
                     <div class="skills_data">
                         <div class="skills_names">
-                            <i class='bx bxl-javascript skills_icon'></i>
-                            <span class="skills_name">Javascript</span>
+                            <i class='bx bxl-facebook-square' style='color:#3f63ec' ></i>
+                            <span class="skills_name">Facebook</span>
 
                         </div>
                         <div>
@@ -178,7 +185,9 @@
                 </div>
 
                 <div>
-                    <img src="skill.jpg" alt="image" class="skills_img">
+
+                    <img src="social.jpg" alt="image" id="img1" class="skills_img">
+
                 </div>
 
             </div>
@@ -229,19 +238,19 @@
 
         <!-- contact  -->
 
-<section class="contact bd-grid" id="contact">
+<section class="contact home-grid" id="contact">
 
     <h2 class="section-title">Contact</h2>
 
     <div class="contact_container bd-grid">
 
-        <form action="" class="contact_form">
+        <form action="https://formspree.io/f/xgepapyo" method="POST" class="contact_form">
 
-            <input type="text" placeholder="Name" class="contact_input">
-            <input type="mail" placeholder="Email" class="contact_input">
-            <textarea name=""d="" cols="0" class="contact_input" rows="10"></textarea>
+            <input type="text" placeholder="Name" name="Name" class="contact_input">
+            <input type="mail" placeholder="Email" name="Email" class="contact_input">
+            <textarea name="message"d="" cols="0" class="contact_input" rows="10"></textarea>
         
-            <input type="button" value="Send" class="contact_button button">
+            <input type="submit" value="Send" class="contact_button button">
 
         </form>
 
