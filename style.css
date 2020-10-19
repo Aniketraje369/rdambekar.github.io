@@ -159,7 +159,7 @@ img{
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
 
 }
 
@@ -285,20 +285,17 @@ img{
 
 @keyframes animate{
 
-    0%{
-        background-image: url('background1.jpg');
+    0%,100%{
+        background-image: url('background-1.jpg');
     }
     25%{
-        background-image: url('background2.jpg');
+        background-image: url('background-2.jpg');
     }
     50%{
-        background-image: url('background3.jpg');
+        background-image: url('background-4.jpg');
     }
     75%{
-         background-image: url('background4.jpg');
-    }
-    100%{
-         background-image: url('background5.jpg');
+         background-image: url('background-5.jpg');
     }
     
 }
@@ -513,7 +510,7 @@ img{
 
 .work{
     text-align: center;
-   background: url('abstract-1175050_1920.jpg');
+   background: url('bgimages.jpg');
    background-size: cover; 
    background-color: grey;
    /* background: linear-gradient(120deg, pink, blue); */
