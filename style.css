@@ -1,6 +1,7 @@
 /* using font from google */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cedarville+Cursive&family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&display=swap");
 
 /* h1{
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +24,7 @@
 /* fonts  */
 
 :root{
-    --body-font:'Montserrat', sans-serif;
+    --body-font:'Caveat', cursive;;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
@@ -78,6 +79,20 @@ color: var(--second-color);
 
 }
 
+/* svg style  */
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black url('https://media.giphy.com/media/hL9q5k9dk9l0wGd4e0/giphy.gif') no-repeat center center;
+    z-index: 999;
+
+}
+
+
+
+/* end */
 
 h1,h2,p{
     margin: 0;
@@ -323,12 +338,7 @@ img{
 }
 
 .home_title-color{
-    /* background:-webkit-linear-gradient(360deg,#f1860b,#dd04a7); */
-    /* #00c6a7 and #1e4d92 */
-    /* background-clip: text;
-    -webkit-background-clip:text; */
-    /* -webkit-text-fill-color:transparent; */
-
+    font-family: 'Dancing Script', cursive;
     animation: mycolor 20s ease-in-out infinite;
 }
 
@@ -398,11 +408,16 @@ img{
 
 .button{
     display: inline-block;
-    background-color: var(--first-color);
+    background-color:orange;
+    opacity: 50%;
     color: #fff;
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: 1.5rem;
+}
+
+.button:hover{
+    opacity: 100%;
 }
 
 .button:hover{
@@ -536,12 +551,13 @@ img{
 }
 
 .contact{
-    background:linear-gradient(to right,#ffc3a0,#ffafbd);
+    background:linear-gradient(120deg,#fd986a,#c7c3c1);
 }
-
 
 .contact_input{
     width: 100%;
+    background: black;
+    color: rgb(182, 157, 157);
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi);
     padding: 1rem;
@@ -549,6 +565,10 @@ img{
     border: 1.5px solid var(--second-color);
     outline: none;
     margin-bottom: var(--mb-4);
+}
+
+.contact_input:hover{
+    background: rgb(230, 61, 61);
 }
 
 .contact_button{

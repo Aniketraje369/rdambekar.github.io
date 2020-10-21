@@ -70,7 +70,16 @@ sr.reveal('.skills_data',{interval: 200})
 // sr.reveal('.contact_input',{interval: 200})
 
 
+// preloader script 
 
+var preloader = document.getElementById('loading'); 
+
+function myLoader(){
+    preloader.style.display = 'none';
+}
+
+
+// end
 
 
 
