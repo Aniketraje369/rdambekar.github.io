@@ -72,11 +72,11 @@ sr.reveal('.skills_data',{interval: 200})
 
 // preloader script 
 
-var preloader = document.getElementById('loading'); 
+//var preloader = document.getElementById('loading'); 
 
-function myLoader(){
-    preloader.style.display = 'none';
-}
+//function myLoader(){
+  //  preloader.style.display = 'none';
+//}
 
 
 // end
