@@ -526,11 +526,11 @@ img{
 
 
 .work{
-    text-align: center;
+   /* text-align: center;
    background: url('bgimages.jpg');
-   background-size: cover; 
-   background-color: grey;
-   /* background: linear-gradient(120deg, pink, blue); */
+   background-size: cover;
+   background-color: grey;*/
+   background: linear-gradient(90deg, #434343, #000000 );
 }
 
 .work_container{
